@@ -1,0 +1,16 @@
+---
+layout: default
+modal-id: 6
+date: 2025-04-07
+img: Perritos.png
+alt: Perritos
+title: Perritos
+project-date: Abril 2025
+client: Proyecto Personal
+category: Desarrollo Web
+technologies: "HTML5, Tailwind CSS, jQuery, JavaScript ES6+"
+github: "https://github.com/Raulito007/Perritos"
+despliegue: ""
+collaborators: []
+description: "Esta aplicación web surgió como una tarea de un curso de programación, inicialmente se tenía que enlazar con Dog CEO API. La funcionalidad es básica, permite gestionar posts mediante operaciones CRUD. Incluye validación de formularios, manejo elegante de errores, interfaz responsiva adaptada a cualquier dispositivo, spinner de carga y pruebas unitarias. Integra JSONPlaceholder para datos de posts."
+---

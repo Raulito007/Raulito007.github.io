@@ -1,0 +1,73 @@
+<!-- Portfolio Modals -->
+{% for post in site.posts %}
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-content" style="background-color: #0099CC;">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2><strong>{{ post.title }}</strong></h2>
+            <hr class="star-primary">
+            {% if post.despliegue %}
+            <a href="{{ post.despliegue }}" target="_blank">
+              <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}" style="max-width: 50%; height: auto;">
+            </a>
+            {% else %}
+            <img src="/img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}" style="max-width: 50%; height: auto;">
+            {% endif %}
+            <ul class="list-inline item-details" style="padding-left: 0; margin-left: 0; margin-top: 10px;">
+              {% if post.client %}
+              <li style="margin-left: 0;">Cliente:
+                <strong>{{ post.client }}</strong>
+              </li>
+              <br>
+              {% endif %}
+              {% if post.project-date %}
+              <li style="margin-left: 0;">Fecha:
+                <strong>{{ post.project-date }}</strong>
+              </li>
+              <br>
+              {% endif %}
+              {% if post.category %}
+              <li style="margin-left: 0;">Servicios:
+                <strong>{{ post.category }}</strong>
+              </li>
+              {% endif %}
+            </ul>
+            {% if post.description %}
+            <p style="font-size: 18px; margin-left: 0; padding-left: 0; margin-top: 15px;">{{ post.description }}</p>
+            {% endif %}
+            {% if post.github %}
+            <p><strong>GitHub:</strong> <a href="{{ post.github }}" target="_blank" style="color: #fff;">{{ post.github }}</a></p>
+            {% endif %}
+            {% if post.despliegue %}
+            <p><strong>Despliegue:</strong> <a href="{{ post.despliegue }}" target="_blank" style="color: #fff;">{{ post.despliegue }}</a></p>
+            {% endif %}
+            {% if post.collaborators %}
+            <p><strong>Equipo:</strong></p>
+            <ul style="list-style: none; padding: 0;">
+              {% for collaborator in post.collaborators %}
+              <li style="margin: 10px 0;">
+                <a href="{{ collaborator.url }}" target="_blank" style="color: #fff;">
+                  <i class="fa-brands fa-github"></i> {{ collaborator.name }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

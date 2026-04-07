@@ -1,10 +1,6 @@
----
-layout: page
-title: "Sobre mí"
-permalink: /about/
----
+Raulito007.github.io
 
-# Hola, soy Raulito
+Mi Portfolio Digital
 
 Bienvenid@s.
 
@@ -60,6 +56,4 @@ enfoque particular que permite utilizar solo los componentes necesarios sin carg
 Ahora te dejo que disfrutes del portfolio.
 
 
-Bienvenido a mi portfolio digital.  
-Aquí encontrarás mis proyectos, mis habilidades y mis formas de contacto.
-Aprendo día a día y me considero un autodidacta así que es posible que encuentres cosas nuevas en cada visita.
+

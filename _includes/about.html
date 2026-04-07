@@ -1,0 +1,50 @@
+<!-- About Section -->
+<section class="success" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Sobre mi</h2>
+        <hr class="star-light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2" style="text-align: justify;">
+        <div class="about-text">
+        <p><strong>Mi Portfolio Digital</strong></p>
+        <p>Bienvenid@s.</p>
+        <p>En este portfolio podréis encontrar mis trabajos y proyectos. Antes de comenzar, permitidme una breve presentación. Mi nombre es Raúl y soy un apasionado de la informática desde siempre.</p>
+        <p>Mi primer ordenador llegó a mis manos con tan solo 16 años (aunque por aquel entonces ya era muy viejo; sigo enamorado de mi 386) y, con el paso del tiempo, he decidido dedicarme profesionalmente a aquello que me apasiona. A los 21 años diseñé un ligero CRM para la empresa en la que trabajaba como recepcionista.</p>
+        <p id="hiddenContent" style="display: none;">Por circunstancias personales me acabé alejando de mi pasión durante un tiempo, pero ahora he decidido dedicarme de pleno a ella.</p>
+        <p id="hiddenContent" style="display: none;">He trabajado y desarrollado proyectos con distintos frameworks como React, Angular, Symfony, Laravel o Spring, entre otros. En este sitio encontraréis ejemplos de algunos de esos desarrollos. Mi objetivo es mostrar de forma clara lo que sé hacer y cómo trabajo.</p>
+        <p id="hiddenContent" style="display: none;">Conozco los lenguajes de programación C/C++, Java, Python, JavaScript, PHP y SQL. Integro IA en mis proyectos, aunque siempre mantengo una supervisión activa: considero que la IA es una herramienta poderosa, pero no debe operar sin control humano; creo que debemos actuar como arquitectos más que como simples codificadores.</p>
+        <p id="hiddenContent" style="display: none;">La seguridad es para mí un pilar básico. Trabajo con sistemas de autenticación como JWT, OAuth2 o proveedores de identidad como Microsoft Entra ID / Azure AD B2C.</p>
+        <p id="hiddenContent" style="display: none;">He trabajado con diversas herramientas de Inteligencia Artificial, como Gemini, Copilot, Claude, ChatGPT, entre otras. He utilizado MCP y creado agentes para tareas de diseño gráfico, integración de código y revisiones de seguridad, entre otras funciones.</p>
+        <p id="hiddenContent" style="display: none;">En los últimos tiempos me he orientado hacia el entorno Azure. Mi primera experiencia en la nube fue con Firebase de Google y todo su ecosistema (para los entendidos: sí, me cambié de bando, más o menos).</p>
+        <p id="hiddenContent" style="display: none;">Soy una persona con un gran sentido del humor, alta tolerancia al cambio (lo demuestro cada día), alta tolerancia a la frustración y un profundo conocimiento de finanzas y entornos de negocio gracias a mi trayectoria profesional previa. Considero que poseo una combinación valiosa: puedo comprender las necesidades del negocio como un graduado en ADE y, al mismo tiempo, identificar los requisitos técnicos como un desarrollador.</p>
+        <p id="hiddenContent" style="display: none;">Aunque no lo parezca, el mundo IT es mi otra gran pasión. Tengo experiencia tanto en entornos Linux como en Microsoft Windows: Windows Server (empecé con la versión 2002 y ya vamos por la 2022), Ubuntu, Mint, Kali, Tsurugi, Parrot, Linux Server, servidores LAMP y WAMP, Apache, NGINX, Tomcat, Docker, VirtualBox, Metasploitable, etc.</p>
+        <p id="hiddenContent" style="display: none;">Ahora te dejo que disfrutes del portfolio.</p>
+
+</div>
+        <a href="#" id="verMasBtn" onclick="toggleContent(event)" style="color: #fff; text-decoration: underline; cursor: pointer; font-size: 18px;">Ver más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleContent(event) {
+    event.preventDefault();
+    const hiddenElements = document.querySelectorAll('#hiddenContent');
+    const btn = document.getElementById('verMasBtn');
+    
+    hiddenElements.forEach(el => {
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+    
+    btn.textContent = btn.textContent === 'Ver más' ? 'Ver menos' : 'Ver más';
+  }
+</script>

@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 3
+date: 2025-03-01
+img: pokedex.png
+alt: Pokédex
+project-date: Marzo 2025
+client: Proyecto de Estudio
+category: Desarrollo Web
+technologies: "Node.js, JSON, JavaScript, API REST"
+github: "https://github.com/Raulito007/Pok-dex"
+despliegue: "https://pok-ket--de-la-paz-42126976-5cd58.europe-west4.hosted.app/"
+collaborators: []
+description: Este proyecto surgió como una práctica del itinerario de Frameworks de eFundae, para ello debía tener comunicación con un servidor Node.js. Para no complicar el proyecto utilice un archivo JSON con más de 800 Pokémon para crear mi propia Pokédex. Aplicación interactiva para consultar información de Pokémon. Por seguridad solo se permite la consulta. Me gusto y acabe desplegandolo en Firebase.
+---

@@ -1,0 +1,16 @@
+---
+layout: default
+modal-id: 7
+date: 2025-04-07
+img: Foro .png
+alt: MyForo
+title: MyForo
+project-date: Abril 2025
+client: Proyecto Personal
+category: Desarrollo Web
+technologies: "PHP 8.0, MySQL, Bootstrap 5, CSRF, Bcrypt"
+github: "https://github.com/Raulito007/MyForo"
+despliegue: ""
+collaborators: []
+description: "Esta aplicación surgió de una apuesta personal. El reto era crear de cero una aplicación WEB para un Foro. Incluye un sistema de roles sofisticado (admin, moderador, usuario), autenticación segura con bcrypt, moderación avanzada, auditoría completa de acciones, cambio de tema persistente y soft delete. Incluye rate limiting en login, validación CSRF, regeneración de sesión y gestión de usuarios con permisos granulares."
+---

@@ -1,0 +1,15 @@
+---
+layout: default
+modal-id: 5
+date: 2025-04-07
+img: Globo .png
+alt: Paises
+project-date: Abril 2025
+client: Proyecto de Estudio
+category: Desarrollo Web
+technologies: "HTML, CSS, JavaScript, API REST"
+github: "https://github.com/Raulito007/Paises"
+despliegue: ""
+collaborators: []
+description: "Aplicación web que permite consultar información de países del mundo reconocidos por la ONU. Muestra datos como población, capital, PIB, emisiones de CO2, banderas y enlaces a Wikipedia. Incluye gamificación con varios juegos: preguntas de países por continente, identificación de banderas y más. Desarrollado con PHP, SQL y XAMPP."
+---

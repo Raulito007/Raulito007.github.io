@@ -1,0 +1,117 @@
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 id="contactTitle" style="cursor: pointer;">Contacto</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    
+    <!-- Contact Information -->
+    <div id="contactContent" style="display: none;">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h4>Nombre: Raúl</h4>
+          <h4>Apellidos: García Gómez</h4>
+          <h4>Email: <a href="mailto:raulgarciagomez@tutamail.com">raulgarciagomez@tutamail.com</a></h4>
+          
+          <hr style="margin: 30px 0;">
+          
+          <h4>Disponibilidad</h4>
+          <p>Disponible para proyectos freelance y oportunidades laborales.<br>
+          Abierto a colaboraciones y nuevos retos profesionales.</p>
+          
+          <h4>Redes Sociales</h4>
+          <p><a href="https://www.linkedin.com/in/ra%C3%BAl-garc%C3%ADa-g%C3%B3mez-312961185/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+          
+          <hr style="margin: 30px 0;">
+          
+          <button type="button" class="btn btn-primary btn-lg" id="contactFormBtn" style="margin-bottom: 30px;">Formulario de Contacto</button>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div id="contactForm" style="display: none;">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <p style="text-align: center; font-size: 18px; margin-bottom: 30px;">Si tienes una idea, un proyecto o simplemente quieres saludar, estaré encantado de leerte. 😉</p>
+            
+            <form action="//formspree.io/raulgarciagomez@tutamail.com" method="POST" name="sentMessage" id="contactFormElement" novalidate>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label for="name">Nombre</label>
+                  <input type="text" name="name" class="form-control" placeholder="Introduzca su nombre" id="name" required
+                    data-validation-required-message="Por favor introduzca su nombre.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label for="email">Email</label>
+                  <input type="email" name="_replyto" class="form-control" placeholder="Correo electrónico" id="email" required
+                    data-validation-required-message="Por favor introduzca aquí su dirección de email.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div>
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="text" name="_gotcha" style="display:none" />
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label for="message">Mensaje</label>
+                  <textarea rows="5" name="message" class="form-control" placeholder="Mensaje" id="message" required
+                    data-validation-required-message="Por favor introduzca un mensaje."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="row">
+                <div class="form-group col-xs-12">
+                  <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Mostrar/ocultar contenido de contacto al hacer click en el título
+  document.getElementById('contactTitle').addEventListener('click', function() {
+    const content = document.getElementById('contactContent');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+    } else {
+      content.style.display = 'none';
+    }
+  });
+  
+  // Mostrar contenido de contacto al hacer click en el enlace del nav
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactNavLink = document.querySelector('a[href="#contact"]');
+    if (contactNavLink) {
+      contactNavLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const content = document.getElementById('contactContent');
+        content.style.display = 'block';
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
+  
+  // Mostrar/ocultar formulario de contacto
+  document.getElementById('contactFormBtn').addEventListener('click', function() {
+    const form = document.getElementById('contactForm');
+    if (form.style.display === 'none') {
+      form.style.display = 'block';
+    } else {
+      form.style.display = 'none';
+    }
+  });
+</script>
