@@ -1,10 +1,10 @@
 ---
 layout: default
 modal-id: 3
-date: 2025-03-01
+date: 2026-03-01
 img: pokedex.png
 alt: Pokédex
-project-date: Marzo 2025
+project-date: Marzo 2026
 client: Proyecto de Estudio
 category: Desarrollo Web
 technologies: "Node.js, JSON, JavaScript, API REST"

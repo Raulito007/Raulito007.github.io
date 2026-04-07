@@ -1,10 +1,10 @@
 ---
 layout: default
 modal-id: 4
-date: 2025-03-15
+date: 2026-03-15
 img: formula-one.png
 alt: Formula-One
-project-date: Marzo 2025
+project-date: Marzo 2026
 client: Proyecto Personal
 category: Desarrollo Web
 technologies: "Zend Framework, PHP, MVC, Arquitectura Modular"

@@ -1,11 +1,11 @@
 ---
 layout: default
 modal-id: 6
-date: 2025-04-07
+date: 2025-06-07
 img: Perritos.png
 alt: Perritos
 title: Perritos
-project-date: Abril 2025
+project-date: Junio 2025
 client: Proyecto Personal
 category: Desarrollo Web
 technologies: "HTML5, Tailwind CSS, jQuery, JavaScript ES6+"

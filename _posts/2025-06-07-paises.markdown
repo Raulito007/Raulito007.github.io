@@ -1,10 +1,10 @@
 ---
 layout: default
 modal-id: 5
-date: 2025-04-07
+date: 2025-06-07
 img: Globo .png
 alt: Paises
-project-date: Abril 2025
+project-date: Junio 2025
 client: Proyecto de Estudio
 category: Desarrollo Web
 technologies: "HTML, CSS, JavaScript, API REST"

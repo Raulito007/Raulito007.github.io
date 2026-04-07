@@ -5,7 +5,7 @@ date: 2025-01-18
 img: De_la_Paz.png
 alt: De_La_PAZ
 title: De_La_Paz
-project-date: Enero 2026
+project-date: Enero 2025
 client: Proyecto Final Grado DAW
 category: Desarrollo Web en Node.js
 technologies: "Tailwind CSS, Node.js, MongoDB"
