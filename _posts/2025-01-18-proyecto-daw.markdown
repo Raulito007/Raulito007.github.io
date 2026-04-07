@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2025-01-18
-img: de_la_paz.png
+img: De_la_paz.png
 alt: De_La_PAZ
 title: De_La_Paz
 project-date: Enero 2026
